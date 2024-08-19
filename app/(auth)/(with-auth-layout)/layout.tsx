@@ -24,7 +24,7 @@ export default function AuthLayout({
           <input value={input} onChange={(e) => setInput(e.target.value)} />
         </div>
         {navLinks.map((link) => {
-          // console.log(`IN: ${link.href}`);
+          console.log(`pathName: ${pathName}`);
           const isActive = pathName.startsWith(link.href);
           return (
             <Link
